@@ -9,11 +9,11 @@
   --ink-panel: #2d1f15;
   --ink-border: #4a3423;
 
-  --copper: #d2803f;
-  --copper-deep: #a15c2b;
+  --brand: #d2803f;
+  --brand-deep: #a15c2b;
 
-  --patina: #74b39c;
-  --patina-hover: #8fc9b2;
+  --brand-2: #74b39c;
+  --brand-2-hover: #8fc9b2;
 
   --cream: #f3e7d3;
   --muted: #b09a82;
@@ -27,10 +27,10 @@
   --color-ink-raised: var(--ink-raised);
   --color-ink-panel: var(--ink-panel);
   --color-ink-border: var(--ink-border);
-  --color-copper: var(--copper);
-  --color-copper-deep: var(--copper-deep);
-  --color-patina: var(--patina);
-  --color-patina-hover: var(--patina-hover);
+  --color-brand: var(--brand);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-2: var(--brand-2);
+  --color-brand-2-hover: var(--brand-2-hover);
   --color-cream: var(--cream);
   --color-muted: var(--muted);
   --color-muted-dim: var(--muted-dim);
@@ -95,7 +95,7 @@ body {
 
 /* Long-form prose shared by the rules page and the blog. */
 .prose-arena h2 {
-  color: var(--copper);
+  color: var(--brand);
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 2.5rem;
@@ -103,7 +103,7 @@ body {
 }
 
 .prose-arena h3 {
-  color: var(--patina);
+  color: var(--brand-2);
   font-size: 1.15rem;
   font-weight: 600;
   margin-top: 1.75rem;
@@ -137,7 +137,7 @@ body {
 }
 
 .prose-arena a {
-  color: var(--copper);
+  color: var(--brand);
   text-decoration: underline;
 }
 
@@ -157,7 +157,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--patina);
+  color: var(--brand-2);
   background: rgba(116, 179, 156, 0.08);
   vertical-align: middle;
 }

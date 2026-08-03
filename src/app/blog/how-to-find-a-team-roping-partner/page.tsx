@@ -17,7 +17,7 @@ export default function Post() {
       <p className="text-xs tracking-wider text-muted-dim uppercase">
         2026-08-03
       </p>
-      <h1 className="mt-2 text-3xl font-extrabold text-copper">
+      <h1 className="mt-2 text-3xl font-extrabold text-brand">
         How to Find a Team Roping Partner Who Actually Fits
       </h1>
 

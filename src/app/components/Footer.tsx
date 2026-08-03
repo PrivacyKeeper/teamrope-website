@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="flex flex-col items-center gap-10 text-center md:flex-row md:items-start md:justify-between md:text-left">
           <div>
-            <h4 className="mb-3 text-sm font-bold tracking-wider text-copper uppercase">
+            <h4 className="mb-3 text-sm font-bold tracking-wider text-brand uppercase">
               TeamRope.pro
             </h4>
             <p className="max-w-xs text-sm text-muted">
@@ -15,68 +15,68 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="mb-3 text-sm font-bold tracking-wider text-copper uppercase">
+            <h4 className="mb-3 text-sm font-bold tracking-wider text-brand uppercase">
               Explore
             </h4>
             <div className="flex flex-col gap-2 text-sm">
               <Link
                 href="/events"
-                className="text-muted transition hover:text-copper"
+                className="text-muted transition hover:text-brand"
               >
                 Events
               </Link>
               <Link
                 href="/rules"
-                className="text-muted transition hover:text-copper"
+                className="text-muted transition hover:text-brand"
               >
                 Rules &amp; Penalties
               </Link>
               <Link
                 href="/blog"
-                className="text-muted transition hover:text-copper"
+                className="text-muted transition hover:text-brand"
               >
                 Blog
               </Link>
               <Link
                 href="/support"
-                className="text-muted transition hover:text-copper"
+                className="text-muted transition hover:text-brand"
               >
                 Support
               </Link>
             </div>
           </div>
           <div>
-            <h4 className="mb-3 text-sm font-bold tracking-wider text-copper uppercase">
+            <h4 className="mb-3 text-sm font-bold tracking-wider text-brand uppercase">
               Legal
             </h4>
             <div className="flex flex-col gap-2 text-sm">
               <Link
                 href="/privacy"
-                className="text-muted transition hover:text-copper"
+                className="text-muted transition hover:text-brand"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/terms"
-                className="text-muted transition hover:text-copper"
+                className="text-muted transition hover:text-brand"
               >
                 Terms of Service
               </Link>
               <Link
                 href="/refund"
-                className="text-muted transition hover:text-copper"
+                className="text-muted transition hover:text-brand"
               >
                 Refund Policy
               </Link>
             </div>
           </div>
           <div>
-            <h4 className="mb-3 text-sm font-bold tracking-wider text-copper uppercase">
+            <h4 className="mb-3 text-sm font-bold tracking-wider text-brand uppercase">
               Contact
             </h4>
             <a
               href="mailto:support@teamrope.pro"
-              className="text-sm text-muted transition hover:text-copper"
+              className="text-sm text-muted transition hover:text-brand"
             >
               support@teamrope.pro
             </a>

@@ -27,15 +27,15 @@ export default function RulesPage() {
       <header className="flex items-center justify-between border-b border-ink-border bg-[#150e09]/90 px-8 py-6 backdrop-blur-sm">
         <Link
           href="/"
-          className="text-xl font-bold text-copper transition hover:text-copper-deep"
+          className="text-xl font-bold text-brand transition hover:text-brand-deep"
         >
           &larr; TeamRope.Pro
         </Link>
         <nav className="flex gap-6 text-sm font-semibold">
-          <Link href="/rules" className="text-copper">
+          <Link href="/rules" className="text-brand">
             Rules
           </Link>
-          <Link href="/blog" className="text-muted transition hover:text-copper">
+          <Link href="/blog" className="text-muted transition hover:text-brand">
             Blog
           </Link>
         </nav>
@@ -43,7 +43,7 @@ export default function RulesPage() {
 
       <main className="arena-panel mx-auto my-8 max-w-3xl px-6 py-8">
         <article className="prose-arena">
-          <h1 className="text-3xl font-extrabold text-copper">
+          <h1 className="text-3xl font-extrabold text-brand">
             Team Roping Rules
           </h1>
           <p className="mt-3 text-muted">
@@ -53,14 +53,14 @@ export default function RulesPage() {
 
           <div className="mt-6 rounded-xl border border-ink-border bg-ink-raised/70 p-5">
             <p className="text-sm text-[#e0d2bd]">
-              <strong className="text-copper">Read this first.</strong> Team
+              <strong className="text-brand">Read this first.</strong> Team
               roping is the one event where the same question has different
               correct answers depending on who is sanctioning — the barrier
               penalty, the crossfire call, and tie-on eligibility all differ.
             </p>
             <p className="mt-3 text-sm text-[#e0d2bd]">
               This page leads with{" "}
-              <strong className="text-copper">USTRC and WSTR</strong>, because
+              <strong className="text-brand">USTRC and WSTR</strong>, because
               that is what most of us are actually roping: numbered jackpots and
               weekend ropings. PRCA values are given alongside, tagged, for when
               you enter a rodeo — but if you are backing into the box at a
@@ -332,8 +332,8 @@ export default function RulesPage() {
             <table className="mt-4 w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b border-ink-border text-left">
-                  <th className="py-2 pr-4 font-bold text-copper">Division</th>
-                  <th className="py-2 font-bold text-copper">Requirement</th>
+                  <th className="py-2 pr-4 font-bold text-brand">Division</th>
+                  <th className="py-2 font-bold text-brand">Requirement</th>
                 </tr>
               </thead>
               <tbody className="text-[#e0d2bd]">
@@ -425,7 +425,7 @@ export default function RulesPage() {
 
           <div className="mt-10 rounded-xl border border-ink-border bg-ink-raised/70 p-5">
             <p className="text-sm text-muted">
-              <strong className="text-copper">Sources and currency.</strong>{" "}
+              <strong className="text-brand">Sources and currency.</strong>{" "}
               USTRC values are from the published USTRC rulebook; the 5-second
               barrier and the heel-equals-head provision were verified against
               it directly. WSTR values are the jackpot-side rules as documented

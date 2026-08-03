@@ -362,21 +362,21 @@ export default function Home() {
           <Link href="/" className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo.png" alt="TeamRope.pro" className="h-14 w-auto" />
-            <span className="hidden text-lg font-bold tracking-wide text-copper sm:block">
-              TEAMROPE<span className="text-patina">.PRO</span>
+            <span className="hidden text-lg font-bold tracking-wide text-brand sm:block">
+              TEAMROPE<span className="text-brand-2">.PRO</span>
             </span>
           </Link>
           <nav className="hidden gap-8 text-sm font-semibold tracking-wider text-muted uppercase md:flex">
-            <a href="#features" className="transition hover:text-copper">
+            <a href="#features" className="transition hover:text-brand">
               Features
             </a>
-            <Link href="/rules" className="transition hover:text-copper">
+            <Link href="/rules" className="transition hover:text-brand">
               Rules
             </Link>
-            <a href="#pricing" className="transition hover:text-copper">
+            <a href="#pricing" className="transition hover:text-brand">
               Pricing
             </a>
-            <Link href="/blog" className="transition hover:text-copper">
+            <Link href="/blog" className="transition hover:text-brand">
               Blog
             </Link>
           </nav>
@@ -393,9 +393,9 @@ export default function Home() {
         />
         <h1 className="mt-8 text-4xl font-extrabold tracking-tight text-cream md:text-5xl">
           Everything Team Roping.{" "}
-          <span className="text-patina">One App.</span>
+          <span className="text-brand-2">One App.</span>
         </h1>
-        <p className="mt-4 text-xl font-bold tracking-wide text-copper italic md:text-2xl">
+        <p className="mt-4 text-xl font-bold tracking-wide text-brand italic md:text-2xl">
           &ldquo;Two ropers. Two numbers. One time.&rdquo;
         </p>
         <p className="mt-6 max-w-2xl text-lg text-muted md:text-xl">
@@ -430,7 +430,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <span className="absolute -top-3 -right-3 rounded-full bg-copper-deep px-2 py-1 text-[10px] font-bold text-white uppercase shadow-lg">
+            <span className="absolute -top-3 -right-3 rounded-full bg-brand-deep px-2 py-1 text-[10px] font-bold text-white uppercase shadow-lg">
               Coming Soon
             </span>
           </div>
@@ -448,7 +448,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <span className="absolute -top-3 -right-3 rounded-full bg-copper-deep px-2 py-1 text-[10px] font-bold text-white uppercase shadow-lg">
+            <span className="absolute -top-3 -right-3 rounded-full bg-brand-deep px-2 py-1 text-[10px] font-bold text-white uppercase shadow-lg">
               Coming Soon
             </span>
           </div>
@@ -456,7 +456,7 @@ export default function Home() {
 
         <a
           href="#waitlist"
-          className="mt-8 rounded-lg bg-copper px-8 py-4 text-lg font-bold tracking-wider text-[#150e09] uppercase shadow-lg shadow-copper/20 transition hover:bg-copper-deep"
+          className="mt-8 rounded-lg bg-brand px-8 py-4 text-lg font-bold tracking-wider text-[#150e09] uppercase shadow-lg shadow-brand/20 transition hover:bg-brand-deep"
         >
           Join the Waitlist
         </a>
@@ -475,7 +475,7 @@ export default function Home() {
               key={who.label}
               className="rounded-xl border border-ink-border bg-ink-raised/70 p-4 text-center"
             >
-              <p className="text-sm font-bold tracking-wider text-copper uppercase">
+              <p className="text-sm font-bold tracking-wider text-brand uppercase">
                 {who.label}
               </p>
               <p className="mt-1 text-xs text-muted">{who.note}</p>
@@ -486,7 +486,7 @@ export default function Home() {
 
       {/* Features */}
       <section id="features" className="mx-auto max-w-7xl px-6 py-20">
-        <h2 className="text-center text-3xl font-bold tracking-wider text-copper uppercase">
+        <h2 className="text-center text-3xl font-bold tracking-wider text-brand uppercase">
           What&apos;s Inside
         </h2>
         <p className="mx-auto mt-4 mb-14 max-w-2xl text-center text-muted">
@@ -499,14 +499,14 @@ export default function Home() {
             <button
               key={f.id}
               onClick={() => setOpenModal(i)}
-              className="group rounded-xl border border-ink-border bg-ink-raised p-6 text-left transition-all hover:border-copper hover:shadow-lg hover:shadow-copper/10"
+              className="group rounded-xl border border-ink-border bg-ink-raised p-6 text-left transition-all hover:border-brand hover:shadow-lg hover:shadow-brand/10"
             >
               <div className="mb-4 text-4xl">{f.icon}</div>
-              <h3 className="text-xl font-semibold text-copper group-hover:underline">
+              <h3 className="text-xl font-semibold text-brand group-hover:underline">
                 {f.title}
               </h3>
               <p className="mt-2 text-sm text-muted">{f.desc}</p>
-              <p className="mt-3 text-xs font-semibold text-patina">
+              <p className="mt-3 text-xs font-semibold text-brand-2">
                 See all {f.detail.length} features &rarr;
               </p>
             </button>
@@ -525,21 +525,21 @@ export default function Home() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="mb-4 text-5xl">{features[openModal].icon}</div>
-            <h3 className="text-2xl font-bold text-copper">
+            <h3 className="text-2xl font-bold text-brand">
               {features[openModal].title}
             </h3>
             <p className="mt-1 text-sm text-muted">{features[openModal].desc}</p>
             <ul className="mt-4 space-y-2">
               {features[openModal].detail.map((item, j) => (
                 <li key={j} className="flex items-start gap-2 text-[#e0d2bd]">
-                  <span className="mt-0.5 text-patina">&#10003;</span>
+                  <span className="mt-0.5 text-brand-2">&#10003;</span>
                   {item}
                 </li>
               ))}
             </ul>
             <button
               onClick={() => setOpenModal(null)}
-              className="mt-6 rounded-lg bg-copper px-6 py-2 font-semibold text-[#150e09] transition hover:bg-copper-deep"
+              className="mt-6 rounded-lg bg-brand px-6 py-2 font-semibold text-[#150e09] transition hover:bg-brand-deep"
             >
               Close
             </button>
@@ -549,7 +549,7 @@ export default function Home() {
 
       {/* Why it is different */}
       <section className="mx-auto max-w-5xl px-6 py-20">
-        <h2 className="mb-14 text-center text-3xl font-bold tracking-wider text-copper uppercase">
+        <h2 className="mb-14 text-center text-3xl font-bold tracking-wider text-brand uppercase">
           Why Team Roping Needed Its Own App
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -571,7 +571,7 @@ export default function Home() {
               key={c.t}
               className="rounded-xl border border-ink-border bg-ink-raised p-6"
             >
-              <h3 className="text-lg font-semibold text-patina">{c.t}</h3>
+              <h3 className="text-lg font-semibold text-brand-2">{c.t}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted">{c.d}</p>
             </div>
           ))}
@@ -580,7 +580,7 @@ export default function Home() {
 
       {/* Pricing */}
       <section id="pricing" className="mx-auto max-w-5xl px-6 py-20">
-        <h2 className="mb-14 text-center text-3xl font-bold tracking-wider text-copper uppercase">
+        <h2 className="mb-14 text-center text-3xl font-bold tracking-wider text-brand uppercase">
           Pricing
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -589,21 +589,21 @@ export default function Home() {
               key={plan.name}
               className={`rounded-xl border p-8 ${
                 plan.featured
-                  ? "border-copper bg-ink-panel shadow-lg shadow-copper/15"
+                  ? "border-brand bg-ink-panel shadow-lg shadow-brand/15"
                   : "border-ink-border bg-ink-raised"
               }`}
             >
               {plan.featured && (
-                <p className="mb-2 text-xs font-bold tracking-wider text-patina uppercase">
+                <p className="mb-2 text-xs font-bold tracking-wider text-brand-2 uppercase">
                   Most Popular
                 </p>
               )}
               {plan.best && (
-                <p className="mb-2 text-xs font-bold tracking-wider text-copper uppercase">
+                <p className="mb-2 text-xs font-bold tracking-wider text-brand uppercase">
                   Best Value
                 </p>
               )}
-              <h3 className="text-xl font-bold text-copper">{plan.name}</h3>
+              <h3 className="text-xl font-bold text-brand">{plan.name}</h3>
               <div className="mt-4">
                 <span className="text-4xl font-extrabold text-cream">
                   {plan.price}
@@ -616,7 +616,7 @@ export default function Home() {
                     key={p}
                     className="flex items-start gap-2 text-sm text-[#e0d2bd]"
                   >
-                    <span className="mt-0.5 text-patina">&#10003;</span>
+                    <span className="mt-0.5 text-brand-2">&#10003;</span>
                     {p}
                   </li>
                 ))}
@@ -628,14 +628,14 @@ export default function Home() {
 
       {/* Waitlist */}
       <section id="waitlist" className="mx-auto max-w-xl px-6 py-20 text-center">
-        <h2 className="mb-4 text-3xl font-bold tracking-wider text-copper uppercase">
+        <h2 className="mb-4 text-3xl font-bold tracking-wider text-brand uppercase">
           Get Early Access
         </h2>
         <p className="mb-8 text-muted">
           Drop your email and be the first to know when TeamRope.pro launches.
         </p>
         {status === "success" ? (
-          <p className="text-lg font-semibold text-copper">
+          <p className="text-lg font-semibold text-brand">
             &#127881; You&apos;re on the list! Check your inbox.
           </p>
         ) : (
@@ -649,12 +649,12 @@ export default function Home() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
-              className="flex-1 rounded-lg border border-ink-border bg-ink-raised px-4 py-3 text-cream placeholder-muted-dim focus:border-copper focus:outline-none"
+              className="flex-1 rounded-lg border border-ink-border bg-ink-raised px-4 py-3 text-cream placeholder-muted-dim focus:border-brand focus:outline-none"
             />
             <button
               type="submit"
               disabled={status === "loading"}
-              className="rounded-lg bg-copper px-6 py-3 font-bold tracking-wider text-[#150e09] uppercase shadow-lg shadow-copper/20 transition hover:bg-copper-deep disabled:opacity-50"
+              className="rounded-lg bg-brand px-6 py-3 font-bold tracking-wider text-[#150e09] uppercase shadow-lg shadow-brand/20 transition hover:bg-brand-deep disabled:opacity-50"
             >
               {status === "loading" ? "Submitting..." : "Notify Me"}
             </button>

@@ -74,15 +74,15 @@ export default function Support() {
           <Link href="/" className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo.png" alt="TeamRope.pro" className="h-12 w-auto" />
-            <span className="hidden text-base font-bold tracking-wide text-copper sm:block">
-              TEAMROPE<span className="text-patina">.PRO</span>
+            <span className="hidden text-base font-bold tracking-wide text-brand sm:block">
+              TEAMROPE<span className="text-brand-2">.PRO</span>
             </span>
           </Link>
           <nav className="flex gap-6 text-sm font-semibold tracking-wider text-muted uppercase">
-            <Link href="/" className="transition hover:text-copper">
+            <Link href="/" className="transition hover:text-brand">
               Home
             </Link>
-            <Link href="/rules" className="transition hover:text-copper">
+            <Link href="/rules" className="transition hover:text-brand">
               Rules
             </Link>
           </nav>
@@ -97,7 +97,7 @@ export default function Support() {
           Email us at{" "}
           <a
             href="mailto:support@teamrope.pro"
-            className="text-copper hover:underline"
+            className="text-brand hover:underline"
           >
             support@teamrope.pro
           </a>{" "}
@@ -111,13 +111,13 @@ export default function Support() {
               key={t.h}
               className="rounded-xl border border-ink-border bg-ink-raised p-6"
             >
-              <h2 className="text-lg font-semibold text-copper">{t.h}</h2>
+              <h2 className="text-lg font-semibold text-brand">{t.h}</h2>
               <p className="mt-2 text-sm leading-relaxed text-[#e0d2bd]">
                 {t.p}
               </p>
               <a
                 href={`mailto:${t.email}?subject=${t.subject}`}
-                className="mt-3 inline-block text-sm font-semibold text-patina hover:underline"
+                className="mt-3 inline-block text-sm font-semibold text-brand-2 hover:underline"
               >
                 Email about this &rarr;
               </a>

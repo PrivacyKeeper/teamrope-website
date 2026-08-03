@@ -41,15 +41,15 @@ export default function EventsPage() {
       <header className="flex items-center justify-between border-b border-ink-border bg-[#150e09]/90 px-8 py-6 backdrop-blur-sm">
         <Link
           href="/"
-          className="text-xl font-bold text-copper transition hover:text-copper-deep"
+          className="text-xl font-bold text-brand transition hover:text-brand-deep"
         >
           &larr; TeamRope.Pro
         </Link>
         <nav className="flex gap-6 text-sm font-semibold">
-          <Link href="/rules" className="text-muted transition hover:text-copper">
+          <Link href="/rules" className="text-muted transition hover:text-brand">
             Rules
           </Link>
-          <Link href="/blog" className="text-muted transition hover:text-copper">
+          <Link href="/blog" className="text-muted transition hover:text-brand">
             Blog
           </Link>
         </nav>
@@ -57,7 +57,7 @@ export default function EventsPage() {
 
       <main className="arena-panel mx-auto my-8 max-w-4xl px-6 py-8">
         <article className="prose-arena">
-          <h1 className="text-3xl font-extrabold text-copper">
+          <h1 className="text-3xl font-extrabold text-brand">
             Events &amp; Formats
           </h1>
           <p className="mt-3 text-muted">
@@ -71,8 +71,8 @@ export default function EventsPage() {
             <table className="mt-4 w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b border-ink-border text-left">
-                  <th className="py-2 pr-4 font-bold text-copper">Format</th>
-                  <th className="py-2 font-bold text-copper">Structure</th>
+                  <th className="py-2 pr-4 font-bold text-brand">Format</th>
+                  <th className="py-2 font-bold text-brand">Structure</th>
                 </tr>
               </thead>
               <tbody className="text-[#e0d2bd]">

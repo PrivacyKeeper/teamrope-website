@@ -17,7 +17,7 @@ export default function Post() {
       <p className="text-xs tracking-wider text-muted-dim uppercase">
         2026-08-03
       </p>
-      <h1 className="mt-2 text-3xl font-extrabold text-copper">
+      <h1 className="mt-2 text-3xl font-extrabold text-brand">
         Divisions, Caps and Floors: Why Your Entry Got Rejected
       </h1>
 
@@ -58,8 +58,8 @@ export default function Post() {
         <table className="mt-4 w-full border-collapse text-sm">
           <thead>
             <tr className="border-b border-ink-border text-left">
-              <th className="py-2 pr-4 font-bold text-copper">Division</th>
-              <th className="py-2 font-bold text-copper">Requirement</th>
+              <th className="py-2 pr-4 font-bold text-brand">Division</th>
+              <th className="py-2 font-bold text-brand">Requirement</th>
             </tr>
           </thead>
           <tbody className="text-[#e0d2bd]">

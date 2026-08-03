@@ -54,7 +54,7 @@ export default function Refund() {
         <div className="arena-panel p-8 md:p-10">
           <Link
             href="/"
-            className="mb-8 inline-block text-sm text-copper hover:underline"
+            className="mb-8 inline-block text-sm text-brand hover:underline"
           >
             &larr; Back to Home
           </Link>
@@ -64,7 +64,7 @@ export default function Refund() {
           <div className="space-y-8 text-[#e0d2bd]">
             {sections.map((s) => (
               <section key={s.h}>
-                <h2 className="mb-2 text-xl font-bold text-copper">{s.h}</h2>
+                <h2 className="mb-2 text-xl font-bold text-brand">{s.h}</h2>
                 <p className="leading-relaxed">{s.p}</p>
               </section>
             ))}

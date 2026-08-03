@@ -20,15 +20,15 @@ export default function BlogLayout({
       <header className="flex items-center justify-between border-b border-ink-border bg-[#150e09]/90 px-8 py-6 backdrop-blur-sm">
         <Link
           href="/"
-          className="text-xl font-bold text-copper transition hover:text-copper-deep"
+          className="text-xl font-bold text-brand transition hover:text-brand-deep"
         >
           &larr; TeamRope.Pro
         </Link>
         <nav className="flex gap-6 text-sm font-semibold">
-          <Link href="/rules" className="text-muted transition hover:text-copper">
+          <Link href="/rules" className="text-muted transition hover:text-brand">
             Rules
           </Link>
-          <Link href="/blog" className="text-copper">
+          <Link href="/blog" className="text-brand">
             Blog
           </Link>
         </nav>
@@ -41,13 +41,13 @@ export default function BlogLayout({
       <footer className="border-t border-ink-border bg-[#0e0906] px-8 py-8 text-center text-sm text-muted-dim">
         <p>&copy; 2026 Apps 1, LLC. All rights reserved.</p>
         <div className="mt-2 flex justify-center gap-4">
-          <Link href="/terms" className="text-copper hover:underline">
+          <Link href="/terms" className="text-brand hover:underline">
             Terms
           </Link>
-          <Link href="/privacy" className="text-copper hover:underline">
+          <Link href="/privacy" className="text-brand hover:underline">
             Privacy
           </Link>
-          <Link href="/refund" className="text-copper hover:underline">
+          <Link href="/refund" className="text-brand hover:underline">
             Refund Policy
           </Link>
         </div>
