@@ -1,0 +1,57 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: {
+    template: "%s | TeamRope.Pro Blog",
+    default: "TeamRope.Pro Blog - Team Roping News, Numbers, Rules & Partners",
+  },
+  description:
+    "The official TeamRope.Pro blog. Team roping rules, the handicap number system, division caps and floors, tie-on eligibility, partner matching, and everything the team roping community needs.",
+};
+
+export default function BlogLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="arena-page arena-bg-2 min-h-screen">
+      <header className="flex items-center justify-between border-b border-ink-border bg-[#150e09]/90 px-8 py-6 backdrop-blur-sm">
+        <Link
+          href="/"
+          className="text-xl font-bold text-copper transition hover:text-copper-deep"
+        >
+          &larr; TeamRope.Pro
+        </Link>
+        <nav className="flex gap-6 text-sm font-semibold">
+          <Link href="/rules" className="text-muted transition hover:text-copper">
+            Rules
+          </Link>
+          <Link href="/blog" className="text-copper">
+            Blog
+          </Link>
+        </nav>
+      </header>
+
+      <main className="arena-panel mx-auto my-8 max-w-3xl px-6 py-8">
+        {children}
+      </main>
+
+      <footer className="border-t border-ink-border bg-[#0e0906] px-8 py-8 text-center text-sm text-muted-dim">
+        <p>&copy; 2026 Apps 1, LLC. All rights reserved.</p>
+        <div className="mt-2 flex justify-center gap-4">
+          <Link href="/terms" className="text-copper hover:underline">
+            Terms
+          </Link>
+          <Link href="/privacy" className="text-copper hover:underline">
+            Privacy
+          </Link>
+          <Link href="/refund" className="text-copper hover:underline">
+            Refund Policy
+          </Link>
+        </div>
+      </footer>
+    </div>
+  );
+}

@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+:root {
+  /* TeamRope.pro accent, per the build map: copper and cream on deep saddle
+     brown. The secondary is verdigris — aged copper — which keeps the two
+     accents related instead of arbitrary. */
+  --ink: #150e09;
+  --ink-raised: #221710;
+  --ink-panel: #2d1f15;
+  --ink-border: #4a3423;
+
+  --copper: #d2803f;
+  --copper-deep: #a15c2b;
+
+  --patina: #74b39c;
+  --patina-hover: #8fc9b2;
+
+  --cream: #f3e7d3;
+  --muted: #b09a82;
+  --muted-dim: #7d6a56;
+}
+
+@theme inline {
+  --color-background: var(--ink);
+  --color-foreground: var(--cream);
+  --color-ink: var(--ink);
+  --color-ink-raised: var(--ink-raised);
+  --color-ink-panel: var(--ink-panel);
+  --color-ink-border: var(--ink-border);
+  --color-copper: var(--copper);
+  --color-copper-deep: var(--copper-deep);
+  --color-patina: var(--patina);
+  --color-patina-hover: var(--patina-hover);
+  --color-cream: var(--cream);
+  --color-muted: var(--muted);
+  --color-muted-dim: var(--muted-dim);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+/* Arena backdrop, same approach as the other Rodeo Apps sites: a fixed,
+   softened image behind the content with a gradient wash over it. Swap the
+   files in public/backgrounds/ to change it. */
+.arena-page {
+  --arena-bg-image: none;
+  position: relative;
+  isolation: isolate;
+  background-color: var(--ink);
+}
+
+.arena-page::before {
+  content: "";
+  position: fixed;
+  inset: -4%;
+  z-index: -2;
+  pointer-events: none;
+  background-image: var(--arena-bg-image);
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px) saturate(0.9) contrast(1.05);
+  opacity: 0.5;
+  transform: scale(1.06);
+}
+
+.arena-page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(210, 128, 63, 0.16), rgba(21, 14, 9, 0.6) 68%),
+    linear-gradient(160deg, rgba(21, 14, 9, 0.72), rgba(34, 23, 16, 0.9));
+}
+
+.arena-bg-1 {
+  --arena-bg-image: url("/backgrounds/arena-1.jpg");
+}
+
+.arena-bg-2 {
+  --arena-bg-image: url("/backgrounds/arena-2.jpg");
+}
+
+.arena-panel {
+  background: rgba(34, 23, 16, 0.72);
+  border: 1px solid var(--ink-border);
+  border-radius: 18px;
+  backdrop-filter: blur(2px);
+}
+
+/* Long-form prose shared by the rules page and the blog. */
+.prose-arena h2 {
+  color: var(--copper);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-arena h3 {
+  color: var(--patina);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-arena p {
+  color: #e0d2bd;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.prose-arena ul,
+.prose-arena ol {
+  color: #e0d2bd;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+.prose-arena ul {
+  list-style: disc;
+}
+
+.prose-arena ol {
+  list-style: decimal;
+}
+
+.prose-arena li {
+  margin-bottom: 0.35rem;
+}
+
+.prose-arena a {
+  color: var(--copper);
+  text-decoration: underline;
+}
+
+.prose-arena strong {
+  color: var(--cream);
+}
+
+/* Association tag used on the rules page. Team roping rules genuinely differ
+   by sanctioning body, so every rule that varies is labelled rather than
+   stated as universal. */
+.assoc-tag {
+  display: inline-block;
+  border: 1px solid var(--ink-border);
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--patina);
+  background: rgba(116, 179, 156, 0.08);
+  vertical-align: middle;
+}
