@@ -6,7 +6,7 @@ export default function SchemaMarkup() {
     applicationCategory: "SportsApplication",
     operatingSystem: "iOS, Android",
     description:
-      "The complete team roping app. Partner matching that respects the number system, entry eligibility validated against division caps and floors, event entries, draws, live results, steer history, horses, rules, and the community. Built for headers and heelers at every number.",
+      "The everything app for team roping. A social platform for the whole community, partner matching that respects the number system, entry eligibility validated against division caps and floors, entries, draws, live results, steer history, horses, gear, and rules. Built for amateur ropers at USTRC and WSTR numbered jackpots — every number, both ends.",
     url: "https://www.teamrope.pro",
     offers: [
       {
@@ -71,7 +71,7 @@ export default function SchemaMarkup() {
         name: "What is the barrier penalty in team roping?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Under PRCA rules the barrier penalty is 10 seconds. Under USTRC rules it is 5 seconds, and the heel barrier penalty always equals the head barrier penalty. This difference is the single most common misconfiguration in team roping software, so always confirm which rule set a class is running before you enter.",
+          text: "It depends on who is sanctioning. At USTRC numbered jackpots the barrier penalty is 5 seconds, and the penalty for beating the heel barrier is always the same as for beating the head barrier. At PRCA rodeos it is 10 seconds. This difference is the single most common misconfiguration in team roping software, so always confirm which rule set a class is running before you enter.",
         },
       },
       {

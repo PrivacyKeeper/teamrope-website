@@ -6,12 +6,40 @@ import Footer from "./components/Footer";
 import Link from "next/link";
 
 /**
- * Feature groups mirror the screens in the build map's §11 route tree. Partner
- * matching leads because it is the feature the whole app is built around —
- * per the map, "the single highest-value feature in this entire build".
+ * Feature groups mirror the screens in the build map's §11 route tree.
+ *
+ * Ordering: this is an everything-app for the team roping community, so the
+ * social platform leads — it is what people open daily. Partner matching is
+ * second because it is the standout differentiator (per the map, "the single
+ * highest-value feature in this entire build"), and no other event in the
+ * portfolio has an equivalent.
+ *
+ * Audience is amateur ropers — weekend jackpots, USTRC and WSTR numbered
+ * ropings, high school and college — not PRCA professionals. Copy and rule
+ * emphasis follow that throughout.
+ *
  * Free tiers are listed first, premium after.
  */
 const features = [
+  {
+    id: "social",
+    icon: "👥",
+    title: "Social & Community",
+    desc: "The Whole Team Roping World, In One Feed",
+    detail: [
+      "A real feed — post photos and video of your runs, not just results",
+      "Stories that disappear in 24 hours",
+      "Like, comment, bookmark, repost, and share to anywhere",
+      "Follow the ropers you look up to and build your own following",
+      "Group chats for your barn, your practice pen, or your travel partners",
+      "Direct messaging with read receipts",
+      "Find ropers near you, at your number, or heading to the same roping",
+      "Regional and arena-based groups — your local roping scene, organized",
+      "Celebrate first catches, first checks, and first buckles",
+      "Badges for milestones, streaks, and consistency",
+      "Block, report, and mute on every account from day one",
+    ],
+  },
   {
     id: "partners",
     icon: "🤝",
@@ -133,23 +161,6 @@ const features = [
     ],
   },
   {
-    id: "social",
-    icon: "👥",
-    title: "Social & Community",
-    desc: "The Whole Team Roping Community, One Place",
-    detail: [
-      "Post photos and video of your runs straight to your feed",
-      "Stories that disappear in 24 hours",
-      "Like, comment, bookmark, and repost",
-      "Follow the ropers you look up to and build your own following",
-      "Group chats for your barn, your practice pen, or your travel partners",
-      "Direct messaging with read receipts",
-      "Search and discover ropers near you",
-      "Earn badges for milestones and achievements",
-      "Block, report, and mute — available from day one",
-    ],
-  },
-  {
     id: "marketplace",
     icon: "🛒",
     title: "Marketplace",
@@ -204,8 +215,10 @@ const features = [
     id: "training",
     icon: "🎯",
     title: "Training & AI",
-    desc: "The Run, Frame By Frame (Premium)",
+    desc: "Coaching For People Who Cannot Afford A Coach (Premium)",
     detail: [
+      "Film a run on your phone and get it broken down — no special equipment",
+      "Progress measured against your own baseline, not against a professional's",
       "Barrier margin in milliseconds, tracked across a whole season",
       "Crossfire risk measured against both standards, reported under whichever the class runs",
       "Header delivery frame, swing count, and loop travel time",
@@ -379,19 +392,27 @@ export default function Home() {
           className="w-[300px] drop-shadow-2xl md:w-[400px]"
         />
         <h1 className="mt-8 text-4xl font-extrabold tracking-tight text-cream md:text-5xl">
-          Find The Partner.{" "}
-          <span className="text-patina">Know The Number.</span>
+          Everything Team Roping.{" "}
+          <span className="text-patina">One App.</span>
         </h1>
         <p className="mt-4 text-xl font-bold tracking-wide text-copper italic md:text-2xl">
           &ldquo;Two ropers. Two numbers. One time.&rdquo;
         </p>
         <p className="mt-6 max-w-2xl text-lg text-muted md:text-xl">
           Team roping is the largest participation event in the western world,
-          and more than 200,000 ropers carry a handicap number. That number
-          decides who you can rope with, what you can enter, and what you can
-          win — and no app has ever been built around it. This one is. Partner
-          matching, eligibility checked before you pay, entries, draws, live
-          results, steer history, and both ends of every run.
+          and the vast majority of us are weekend ropers — numbered jackpots,
+          local ropings, high school and college. Right now that whole world
+          runs on Facebook groups, group texts, and a spreadsheet somebody keeps
+          in a truck.
+        </p>
+        <p className="mt-4 max-w-2xl text-lg text-muted md:text-xl">
+          This is the app for all of it. The feed, the community, and the
+          people. Finding a partner who actually fits your number. Entering the
+          right division without getting turned away at the office. Your runs,
+          your horses, your gear, and every roping within driving distance —{" "}
+          <span className="text-cream">
+            if you team rope, you should not need another app.
+          </span>
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
@@ -445,10 +466,10 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 pb-8">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {[
-            { label: "Headers", note: "1 through 9, half numbers" },
-            { label: "Heelers", note: "1 through 10, tie-on eligible" },
-            { label: "Producers", note: "Jackpots, series, rodeos" },
-            { label: "Coaches", note: "High school, college, barns" },
+            { label: "Every Number", note: "Your first #8 to the open" },
+            { label: "Both Ends", note: "Headers and heelers alike" },
+            { label: "Families", note: "Juniors, parents, and grandparents" },
+            { label: "Producers", note: "Weekend jackpots to big ropings" },
           ].map((who) => (
             <div
               key={who.label}
@@ -469,8 +490,9 @@ export default function Home() {
           What&apos;s Inside
         </h2>
         <p className="mx-auto mt-4 mb-14 max-w-2xl text-center text-muted">
-          Fifteen feature groups, built for the way this event actually runs.
-          Tap any card for the full list.
+          Fifteen feature groups — the social side, the competing side, and
+          everything in between. Built for weekend ropers, not just the ones on
+          TV. Tap any card for the full list.
         </p>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((f, i) => (
@@ -533,16 +555,16 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {[
             {
+              t: "Built for the numbered roping, not the NFR",
+              d: "Most of us rope USTRC and WSTR jackpots on a weekend, not PRCA rodeos on TV. Every default in this app — the barrier penalty, the divisions, the formats — assumes the roping you are actually entering on Saturday.",
+            },
+            {
               t: "The number is the whole sport",
               d: "A roper's identity is \"I'm a 5.5 header.\" Divisions, partners, entry eligibility, and bragging rights all run through it. Every other app treats it as a field on a profile. Here it is the spine.",
             },
             {
               t: "Everything is a pair, not a person",
               d: "Two contestants, two independent handicaps, two ends, penalties attributable to each. Entries are teams. Software built for a single contestant and retrofitted always gets this wrong.",
-            },
-            {
-              t: "Eligibility checked before you pay",
-              d: "Caps, floors, the Elite rule, entry limits, switch-ends, and tie-on eligibility validated at entry time. Getting this wrong at the arena costs a roper their fees.",
             },
           ].map((c) => (
             <div

@@ -55,13 +55,22 @@ export default function RulesPage() {
             <p className="text-sm text-[#e0d2bd]">
               <strong className="text-copper">Read this first.</strong> Team
               roping is the one event where the same question has different
-              correct answers depending on who is sanctioning. The barrier
-              penalty, the crossfire standard, and tie-on eligibility all differ
-              between the PRCA and the jackpot associations. Every rule below
-              that varies is tagged with the body it comes from. Always confirm
-              the ground rules of the specific roping you are entering — minor
-              variations in score length and go-round count are routinely
-              approved.
+              correct answers depending on who is sanctioning — the barrier
+              penalty, the crossfire call, and tie-on eligibility all differ.
+            </p>
+            <p className="mt-3 text-sm text-[#e0d2bd]">
+              This page leads with{" "}
+              <strong className="text-copper">USTRC and WSTR</strong>, because
+              that is what most of us are actually roping: numbered jackpots and
+              weekend ropings. PRCA values are given alongside, tagged, for when
+              you enter a rodeo — but if you are backing into the box at a
+              Saturday roping, the jackpot rules are the ones that apply to you.
+            </p>
+            <p className="mt-3 text-sm text-[#e0d2bd]">
+              Always confirm the ground rules of the specific roping you are
+              entering. Minor variations in score length and go-round count are
+              routinely approved, and the producer&apos;s ground rules override
+              association rules for that roping.
             </p>
           </div>
 
@@ -157,18 +166,21 @@ export default function RulesPage() {
           </p>
           <ul>
             <li>
-              <strong>10 seconds</strong> <Assoc>PRCA</Assoc>
+              <strong>5 seconds</strong> <Assoc>USTRC</Assoc> — the rulebook
+              states that the penalty for beating the heel barrier will always
+              be the same as the penalty for beating the head barrier. This is
+              the one that applies at most numbered jackpots.
             </li>
             <li>
-              <strong>5 seconds</strong> <Assoc>USTRC</Assoc> — and the heel
-              barrier penalty always equals the head barrier penalty
+              <strong>10 seconds</strong> <Assoc>PRCA</Assoc> — at rodeos
             </li>
           </ul>
           <p>
             This difference is the single most common misconfiguration in team
-            roping software. Confirm which rule set a class is running before
-            you enter, and never assume the number carried over from the last
-            roping you entered.
+            roping software, and it doubles or halves the cost of a broken
+            barrier depending on which way it is wrong. Confirm which rule set a
+            class is running before you enter, and never assume the number
+            carried over from the last roping you entered.
           </p>
           <p>
             Barrier eye height is 32 to 36 inches at the center of the box.
@@ -200,12 +212,12 @@ export default function RulesPage() {
           </p>
           <ul>
             <li>
-              <Assoc>PRCA</Assoc> A heeler throwing before the header has
-              control and has changed the steer&apos;s direction is a no time.
-            </li>
-            <li>
               <Assoc>USTRC</Assoc> The animal must be in tow before the heel
               rope is released. The call is made on the release.
+            </li>
+            <li>
+              <Assoc>PRCA</Assoc> A heeler throwing before the header has
+              control and has changed the steer&apos;s direction is a no time.
             </li>
           </ul>
           <p>
@@ -414,12 +426,14 @@ export default function RulesPage() {
           <div className="mt-10 rounded-xl border border-ink-border bg-ink-raised/70 p-5">
             <p className="text-sm text-muted">
               <strong className="text-copper">Sources and currency.</strong>{" "}
-              PRCA values are from the 2026 PRCA Rule Book. USTRC and WSTR
-              values are the jackpot-side rules as documented in the TeamRope.pro
-              build map, rules-verified 24 July 2026. Rodeo rules change annually
-              and mid-season. This page is a reference, not a rulebook — the
-              association&apos;s current published rulebook and the ground rules
-              of the specific roping always govern.
+              USTRC values are from the published USTRC rulebook; the 5-second
+              barrier and the heel-equals-head provision were verified against
+              it directly. WSTR values are the jackpot-side rules as documented
+              in the TeamRope.pro build map, rules-verified 24 July 2026. PRCA
+              values are from the 2026 PRCA Rule Book. Rodeo rules change
+              annually and mid-season. This page is a reference, not a
+              rulebook — the association&apos;s current published rulebook and
+              the ground rules of the specific roping always govern.
             </p>
           </div>
         </article>

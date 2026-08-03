@@ -90,19 +90,21 @@ export default function Post() {
 
       <ul>
         <li>
-          <strong>10 seconds</strong> under PRCA rules
+          <strong>5 seconds</strong> under USTRC rules — and the penalty for
+          beating the heel barrier is always the same as for beating the head
+          barrier. This is the one that applies at most numbered jackpots.
         </li>
         <li>
-          <strong>5 seconds</strong> under USTRC rules — and the heel barrier
-          penalty always equals the head barrier penalty
+          <strong>10 seconds</strong> under PRCA rules, at rodeos
         </li>
       </ul>
 
       <p>
         This is the single most common misconfiguration in team roping software.
         A spreadsheet built for a jackpot and reused at a rodeo will quietly
-        halve every barrier penalty in the go-round. It should be an explicit
-        choice at class creation, shown on the entry screen, every time.
+        halve every barrier penalty in the go-round — and one built the other
+        way around will double it. It should be an explicit choice at class
+        creation, shown on the entry screen, every time.
       </p>
 
       <p>

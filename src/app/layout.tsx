@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title:
     "TeamRope.pro - #1 Team Roping App | Partners, Handicaps, Events & Results",
   description:
-    "The complete team roping app. Find a header or a heeler who actually fits your number, enter events with live eligibility checking, track every run, and follow USTRC, WSTR and PRCA standings. Division validation, steer draws, partner matching, and a marketplace built for team ropers.",
+    "The everything app for team roping. The community feed, partner matching that fits your number, entries with live eligibility checking, runs, horses, gear, and every jackpot within driving distance. Built for weekend ropers at USTRC and WSTR numbered ropings — every number, both ends, whole families.",
   keywords:
     "team roping, team roping app, header, heeler, USTRC, WSTR, Global Handicaps, team roping number, team roping partner, team roping events, team roping results, roping jackpot, #10 roping, #12 roping, dally team roping, PRCA team roping, heel horse, head horse, team roping classification, elite roper, tie on rules",
   authors: [{ name: "TeamRope.pro" }],
