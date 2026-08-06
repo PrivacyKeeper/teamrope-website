@@ -392,8 +392,7 @@ export default function Home() {
           className="w-[300px] drop-shadow-2xl md:w-[400px]"
         />
         <h1 className="mt-8 text-4xl font-extrabold tracking-tight text-cream md:text-5xl">
-          Everything Team Roping.{" "}
-          <span className="text-brand-2">One App.</span>
+          TeamRope<span className="text-brand-2">.pro</span>
         </h1>
         <p className="mt-4 text-xl font-bold tracking-wide text-brand italic md:text-2xl">
           &ldquo;Two ropers. Two numbers. One time.&rdquo;
